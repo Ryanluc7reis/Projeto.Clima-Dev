@@ -1,16 +1,24 @@
 {
-  "name": "climadev",
+  "name": "climadev-devchallenge1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryanluc7reis/climaDev-devchallenge1.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryanluc7reis/climaDev-devchallenge1/issues"
+  },
+  "homepage": "https://github.com/Ryanluc7reis/climaDev-devchallenge1#readme",
   "dependencies": {
-    "next": "^12.2.5",
+    "next": "^13.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
