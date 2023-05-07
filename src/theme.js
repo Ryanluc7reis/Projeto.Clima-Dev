@@ -1,6 +1,7 @@
 const theme = {
     primary: '#EC6E4C',
     white: '#FFFFFF',
-    black: '#424242' 
+    black: '#424242' ,
+    backgroundInput: '#f6f6f6'
 }
 export default theme
