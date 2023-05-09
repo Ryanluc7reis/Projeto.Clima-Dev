@@ -5,10 +5,11 @@ import styled from 'styled-components'
 import Navbar from '../../../src/components/navbar/Navbar'
 import Container from '../../../src/components/container/Container'
 import ClimaCard from '../../../src/components/climacard/Climacard'
+import Footer from '../../../src/components/footer/Footer'
 
 const Body = styled.div`
 background-color: ${props => props.theme.grey};
-min-height: 100vh;
+min-height: calc(100vh - 200px);
 `
 const Content = styled.div`
   padding: 100px 20px;
@@ -94,6 +95,7 @@ export default function IngoPage() {
             </InfoContainer>
         </Container>       
       </Body>
+      <Footer />
     </>
   )
 }
