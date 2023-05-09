@@ -53,7 +53,7 @@ export default function IngoPage() {
       fetchFutureInfo()
     }
   },[ lat, lon])
-  console.log(currentInfo)
+ 
   return (
     <>
       <Navbar />
@@ -61,13 +61,13 @@ export default function IngoPage() {
         <Container>
           <Content>
             <Text>Previsão do tempo para </Text>
-            <CityName>{currentInfo?.name}, {currentInfo?.sys.country}</CityName>           
+            <CityName>{currentInfo?.name}, {currentInfo?.sys?.country}</CityName>           
           </Content>
           <InfoContainer>
               <ClimaCard 
                 title="Agora"
-                icon={currentInfo?.weather?.icon}
-                description={currentInfo?.weather?.description}
+                icon={currentInfo?.weather[0]?.icon}
+                description={currentInfo?.weather[0]?.description}
                 temp={currentInfo?.main?.temp}
                 feels={currentInfo?.main?.feels_like}
                 min={currentInfo?.main?.temp_min}
