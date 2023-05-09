@@ -5,6 +5,7 @@ const StyledContainer = styled.div`
   margin: 0 auto;
   width: 100%;
   
+  
   @media (min-width: 768px) { // telas acima de 768px ,vc deixa width 90%
     width: 93%;
   }

@@ -1,18 +1,27 @@
 import styled from 'styled-components'
-import Container from '../container/Container'
 
 const StyledFooter = styled.div`
-  background-color: ${props => props.theme.white};
-  text-align: center;
-  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  margin: 37px 0;
+
   font-weight: 400;
   font-size: 20px;
 `
+const StyledContainer = styled.div`
+  background-color: ${props => props.theme.white};
+  width: 100%;
+  height: 80px;
+  text-align: center;
+`
 export default function Footer() {
   return (
-    <StyledFooter>
-     Criado por <b>Ryan Lucas</b>durante o <b>DevChallenge 01 - SejaDev</b>
-    </StyledFooter>
-  )
 
+    <StyledContainer> 
+      <StyledFooter>
+          Criado por <b>Ryan Lucas</b>durante o <b>DevChallenge 01 - SejaDev</b>
+      </StyledFooter> 
+    </StyledContainer>     
+  )
+     
 }

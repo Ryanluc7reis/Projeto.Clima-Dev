@@ -7,6 +7,7 @@ const StyledClimaCard = styled.div`
   width: 350px;
   padding: 15px;
   box-sizing: border-box;
+  margin-bottom: 70px;
 `
 const Title = styled.h6`
   font-weight: 700;
