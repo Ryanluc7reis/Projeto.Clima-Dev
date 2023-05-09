@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     background-color: ${props => props.theme.white};  
     font-family: sans-serif; 
+    color: ${props => props.theme.black}
   }
   * {
     box-sizing: border-box ; // nao importe o quanto vc aumente o padding ,ele utilzara somente o espaço disponivel
