@@ -15,7 +15,7 @@ const VerticalText = styled.h1`
   margin-top: -50px;
 `
 const HorizontalText = styled.h1`
-  font-size: 40px;
+  font-size: 35px;
 
 `
 const PrimaryColor = styled.span`
