@@ -40,7 +40,7 @@ export default function IngoPage() {
   const { lat, lon} = router.query // pegar dados direto das rotas
 
   const fetchCurrentInfo = async () => {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_OM_KEY}`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_OM_KEY}&units=metric&lang=pt_br`)
     const json = await response.json()
     setCurrentInfo(json)
   }
@@ -56,6 +56,7 @@ export default function IngoPage() {
       fetchFutureInfo()
     }
   },[ lat, lon])
+  console.log(currentInfo)
   return (
     <>
       <Navbar />
