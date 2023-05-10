@@ -40,12 +40,12 @@ export default function IngoPage() {
   const { lat, lon} = router.query // pegar dados direto das rotas
 
   const fetchCurrentInfo = async () => {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&amp;lon=${lon}&amp;appid=${process.env.NEXT_PUBLIC_OWM_KEY2}&amp;units=metric&amp;lang=pt_br`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_OM_KEY}`)
     const json = await response.json()
     setCurrentInfo(json)
   }
   const fetchFutureInfo = async () => {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_OWM_KEY2}&units=metric&lang=pt_br`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_OM_KEY}&units=metric&lang=pt_br`)
     const json = await response.json()
     setFutureInfo(json)
 
@@ -56,6 +56,8 @@ export default function IngoPage() {
       fetchFutureInfo()
     }
   },[ lat, lon])
+  console.log(currentInfo)
+    
  
   return (
     <>
@@ -64,7 +66,7 @@ export default function IngoPage() {
         <Container>
           <Content>
             <Text>Previsão do tempo para </Text>
-            <CityName>{currentInfo?.name}, {currentInfo?.sys?.country}</CityName>           
+            <CityName>{currentInfo?.name}, {currentInfo?.sys.country}</CityName>           
           </Content>
           <InfoContainer>
               <ClimaCard 

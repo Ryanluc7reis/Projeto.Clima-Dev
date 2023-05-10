@@ -58,16 +58,16 @@ export default function ClimaCard({
         </BasicInfoText>
       </BasicInfo>
       <InfoLine>
-        Temperatura<InfoTemperature>{temp}</InfoTemperature>
+        Temperatura<InfoTemperature>{temp}°C</InfoTemperature>
       </InfoLine>
       <InfoLine>
-        Sensação<InfoTemperature>{feels}</InfoTemperature>
+        Sensação<InfoTemperature>{feels}°C</InfoTemperature>
       </InfoLine>
       <InfoLine>
-        Mínima<InfoTemperature blue >{min}</InfoTemperature>
+        Mínima<InfoTemperature blue >{min}°C</InfoTemperature>
       </InfoLine>
       <InfoLine>
-        Máxima<InfoTemperature red >{max}</InfoTemperature>
+        Máxima<InfoTemperature red >{max}°C</InfoTemperature>
       </InfoLine>
     </StyledClimaCard>
   )
