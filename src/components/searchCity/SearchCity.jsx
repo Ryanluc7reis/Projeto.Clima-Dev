@@ -20,7 +20,6 @@ import InputWithSuggestions from '../form/inputWithSuggestion/InputWithSuggestio
       onClick: () => router.push(`/info/${obj.lat}/${obj.lon}`),
     }))
     setSuggestions(formattedList)
-    console.log(formattedList)
   }
   useEffect(() => {
     if (searchText.length >= 3)
