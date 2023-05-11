@@ -4,9 +4,9 @@ const StyledFooter = styled.div`
   display: flex;
   justify-content: center;
   margin: 37px 0;
-
   font-weight: 400;
   font-size: 20px;
+  gap : 7px;
 `
 const StyledContainer = styled.div`
   background-color: ${props => props.theme.white};
@@ -19,7 +19,7 @@ export default function Footer() {
 
     <StyledContainer> 
       <StyledFooter>
-          Criado por <b>Ryan Lucas</b>durante o <b>DevChallenge 01 - SejaDev</b>
+          Criado por <b>Ryan Lucas</b>   durante o <b>DevChallenge 01 - SejaDev</b>
       </StyledFooter> 
     </StyledContainer>     
   )
