@@ -57,7 +57,7 @@ export default function IngoPage() {
     }
 
   },[ lat, lon])
-  console.log(currentInfo)
+  console.log(futureInfo)
   return (
  
     <>

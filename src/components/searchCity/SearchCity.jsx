@@ -17,7 +17,8 @@ import InputWithSuggestions from '../form/inputWithSuggestion/InputWithSuggestio
   }
   const handleList = (list) => {
     const formattedList = list.map((obj) => ({
-      text: `${obj.name}, ${obj.state} , ${obj.country}`,
+      text: obj.state ? `${obj.name}, ${obj.state} , ${obj.country}`
+      : `${obj.name}, ${obj.country}`,
       onClick: () => router.push(`/info/${obj.lat}/${obj.lon}`),
     })
     )
