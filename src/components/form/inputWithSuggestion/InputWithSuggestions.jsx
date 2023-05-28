@@ -16,21 +16,21 @@ cursor: pointer;
  }
 `
 
-function InputWithSuggestions({ suggestions, ...props }) {
+function InputWithSuggestions({ suggestions,  ...props }) {
   return ( 
       <>
         <Input {...props} />
         <SuggestionsContainer>
           {
             suggestions.map((suggestion, pos) => 
-            <Suggestions 
+              <Suggestions 
             key={`suggestion-${pos}`}
             onClick={suggestion.onClick}
             >               
-                  {suggestion.text}
+                  {suggestion.text}                  
              </Suggestions>
             )
-          }        
+          }              
         </SuggestionsContainer>
       </>
   )
@@ -38,7 +38,7 @@ function InputWithSuggestions({ suggestions, ...props }) {
 InputWithSuggestions.defaultProps = {
   suggestions: [
     {text : 'Sugestão', onClick: () => {}  },
-    {text : 'Sugestão 1', onClick: () => {} }
+    {text : 'Sugestão 1', onClick: () => {} },
   ]
 }
   

@@ -11,22 +11,25 @@ import InputWithSuggestions from '../form/inputWithSuggestion/InputWithSuggestio
   const fetchCitiesList =  async () => {
     const CITIES_LIMIT = 5
     const response = await fetch(`/api/openweathermap?url=geo/1.0/direct?q=${searchText}&limit=${CITIES_LIMIT}`)
-    const json = await response.json()
+    const json = await response.json() 
     handleList(json)  
+    console.log(json)
   }
   const handleList = (list) => {
     const formattedList = list.map((obj) => ({
-      text: `${obj.name}, ${obj.state}, ${obj.country}`,
+      text: `${obj.name}, ${obj.state} , ${obj.country}`,
       onClick: () => router.push(`/info/${obj.lat}/${obj.lon}`),
-    }))
-    setSuggestions(formattedList)
+    })
+    )
+    setSuggestions(formattedList)  
+    
   }
   useEffect(() => {
     if (searchText.length >= 3)
     fetchCitiesList()
-    else setSuggestions([])
+    else setSuggestions([]) 
   },[searchText])
-  
+
   
   return(
     <InputWithSuggestions 

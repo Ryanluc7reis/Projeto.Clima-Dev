@@ -55,9 +55,11 @@ export default function IngoPage() {
       fetchCurrentInfo()
       fetchFutureInfo()
     }
+
   },[ lat, lon])
   console.log(currentInfo)
   return (
+ 
     <>
       <Navbar />
       <Body>
