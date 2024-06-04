@@ -1,5 +1,5 @@
 
-# Social Dev
+# Clima Dev
 Clima Dev é uma aplicação web construída durante a realização de um desafio organizado pela  [Seja-Dev](https://www.linkedin.com/company/seja-dev/).
 
 A aplicação consiste em uma pesquisa de cidades do mundo inteiro por latitude e longitude, onde o resultado dessa pesquisa irá te mostrar a temperatura atual , das próximas 3 horas e próximas 6 horas da cidade selecionada em tempo real. A pesquisa é feita com a ajuda da API OpenSource WeatherMap. (Essa aplicação é adaptada para mobile!!)
